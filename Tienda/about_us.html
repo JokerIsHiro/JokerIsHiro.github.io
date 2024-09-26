@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style_navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <title>Sobre Nosotros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style_navbar.css">
+  <link rel="stylesheet" href="src/style_about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Sobre Nosotros</title>
 </head>
+
 <body>
-    <nav>
-        <div class="menu-icon">
-            <span class="fas fa-bars"></span>
-        </div>
-        <div class="logo">
-            Tienda de Juegos
-        </div>
-        <div class="nav-items">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="products.html">Productos</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-        </div>
-        <div class="search-icon">
-         </div>
-         <div class="cancel-icon">
-         </div>
-         <form action="#">
-            <input type="search" class="search-data" placeholder="Search" required>
-            <button type="submit" class="fas fa-search"></button>
-         </form>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="logo-btn" href="index.html">
+          <img src="img/logo.png">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="products.html">Productos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Yu-Gi-Oh!</a></li>
+            <li><a href="#">Magic</a></li>
+            <li><a href="#">Warhammer</a></li>
+          </ul>
+        </li>
+        <li><a href="about_us.html">Sobre Nosotros</a></li>
+      </ul>
+      <div>
+        <form class="search">
+          <input type="text" placeholder="Buscar...">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <ul class="menu-icons">
+        <li><a href="#"><i class="fa fa-user fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
+      </ul>
     </nav>
+  </header>
 
+  <section class="about-us">
+    <div class="container">
+      <h1>Sobre Nosotros</h1>
+      <p>Bienvenidos a <strong>GeekWorld</strong>, tu tienda especializada en juegos de mesa, cartas coleccionables y
+        miniaturas de Warhammer. Nos apasionan los juegos y queremos compartir esa pasión contigo.</p>
 
+      <h2>Nuestra Misión</h2>
+      <p>Nuestra misión es ofrecer una experiencia única para los fanáticos de los juegos de mesa y los juegos de
+        estrategia. En <strong>GeekWorld</strong>, creemos que los juegos no solo entretienen, sino que también fomentan
+        el trabajo en equipo, la creatividad y la estrategia. Nos esforzamos por tener una selección diversa y accesible
+        para todo tipo de jugadores, desde principiantes hasta veteranos.</p>
+
+      <h2>¿Quiénes Somos?</h2>
+      <div class="team">
+        <!-- Miembro 1 -->
+        <div class="member">
+          <img src="https://via.placeholder.com/150" alt="Juan Pérez">
+          <h3>Juan Pérez</h3>
+          <p>Fundador & CEO</p>
+          <p>Juan es un apasionado de los juegos de mesa desde su infancia. Fundó <strong>GeekWorld</strong> con la
+            visión de crear un lugar donde los jugadores pudieran encontrar sus juegos favoritos y descubrir nuevos.</p>
+        </div>
+      </div>
+
+      <h2>Nuestra Historia</h2>
+      <p>Fundada en 2015, <strong>GeekWorld</strong> nació del deseo de crear un espacio dedicado a los entusiastas de
+        los juegos de mesa y miniaturas. Lo que comenzó como una pequeña tienda en línea, pronto se convirtió en un
+        referente para los jugadores de todo el país. A lo largo de los años, hemos crecido gracias a nuestra comunidad
+        de clientes y al amor que compartimos por los juegos.</p>
+
+      <h2>Por qué elegirnos</h2>
+      <ul>
+        <li>Amplia selección de juegos y miniaturas.</li>
+        <li>Atención personalizada y asesoramiento experto.</li>
+        <li>Envíos rápidos y seguros.</li>
+        <li>Precios competitivos y promociones exclusivas.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 GeekWorld - Todos los derechos reservados.</p>
+    <p>Contacto: contacto@boardgamesshop.com</p>
+  </footer>
 </body>
+
 </html>

@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  position: sticky;
+  margin: 0 auto;
+  padding: 0 10px;
+  z-index: 1000;
+}
+
+nav .logo-btn {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar .nav-links li a {
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: aquamarine;
+  background-color: #818181;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.search form {
+  display: flex;
+  margin: 0;
+}
+
+.search input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search input:hover {
+  border: 1px solid #72a0d4;
+}
+
+.search button {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #ccc;
+}
+
+nav .menu-icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-icons li a {
+  width: 65%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-icons li {
+  margin-left: 20px;
+}
+
+.menu-icons li a {
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.menu-icons li a:hover {
+  transform: scale(1.25);
+  color: aquamarine;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin-top: 10px;
+  background-color: #444;
+  min-width: 200px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
