@@ -4,8 +4,7 @@
   padding: 0;
   margin: 0;
 }
-
-.navbar {
+.wrapper {
   margin-bottom: 0;
 }
 
@@ -68,9 +67,10 @@ section#productos p {
   color: #777;
 }
 
+
 .background-slider {
   width: 100%;
-  height: 500px;
+  height: 450px;
   background-color: #333333;
   display: flex;
   justify-content: center;
@@ -83,13 +83,12 @@ section#productos p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .slider {
   display: flex;
   width: 100%;
-  animation: slide 25s infinite;
+  animation: slide 12s infinite;
 }
 
 .slide {
@@ -107,7 +106,6 @@ section#productos p {
 .slider-slide img {
   width: 100%;
   display: block;
-  margin-top: 45px;
   border-radius: 10px;
 }
 
@@ -116,32 +114,24 @@ section#productos p {
     transform: translateX(0);
   }
 
-  20% {
+  25% {
     transform: translateX(0);
   }
 
-  25% {
+  33% {
     transform: translateX(-100%);
   }
 
-  45% {
+  58% {
     transform: translateX(-100%);
   }
 
-  50% {
+  66% {
     transform: translateX(-200%);
   }
 
-  70% {
+  91% {
     transform: translateX(-200%);
-  }
-
-  75% {
-    transform: translateX(-300%);
-  }
-
-  95% {
-    transform: translateX(-300%);
   }
 
   100% {
@@ -151,6 +141,38 @@ section#productos p {
 
 .checked {
   color: orange;
+}
+
+#floating-text {
+  position: fixed;
+  width: 150px;
+  height: 100px;
+  bottom: 90px;
+  right: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+a #floating-model {
+  position: fixed;
+  width: 100px;
+  display: bloc;
+  height: 100px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+a #floating-model model-viewer {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  --progress-bar-color: none;
+  --progress-bar-height: 0px;
 }
 
 footer {

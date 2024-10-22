@@ -18,7 +18,7 @@
 .about-us h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: center; 
     color: #333;
 }
 
@@ -43,7 +43,6 @@
     margin-bottom: 30px;
 }
 
-/* Estilos del equipo */
 .team {
     display: flex;
     justify-content: space-around;
@@ -76,7 +75,7 @@
     color: #777;
 }
 
-/* Pie de página */
+
 footer {
     background-color: #333;
     color: #fff;

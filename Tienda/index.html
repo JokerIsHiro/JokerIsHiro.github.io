@@ -9,45 +9,57 @@
   <link rel="stylesheet" href="src/style_home.css">
   <link rel="stylesheet" href="src/style_navbar.css">
 
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
   <title>Tienda de Cartas | Inicio</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a class="logo-btn" href="index.html">
-          <img src="img/logo.png">
-        </a>
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="img/logo.png" alt="" srcset="">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="./products.html">Lorcana</a>
+            <ul class="drop-menu">
+              <li><a href="#">Lorcana</a></li>
+              <li><a href="#">Magic The Gathering</a></li>
+              <li><a href="#">Pokemon TCG</a></li>
+              <li><a href="#">Yu-Gi-Oh!</a></li>
+              <li><a href="#">WarHammer</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </li>
+          <li><a href="./products.html">Lorcana</a>
+            <ul class="drop-menu">
+              <li><a href="#">Lorcana</a></li>
+              <li><a href="#">Magic The Gathering</a></li>
+              <li><a href="#">Pokemon TCG</a></li>
+              <li><a href="#">Yu-Gi-Oh!</a></li>
+              <li><a href="#">WarHammer</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="./about_us.html">Sobre Nosotros</a></li>
+          <div class="search-box">
+            <form class="search">
+              <input type="text" placeholder="Buscar...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <li><a href=#><i class="fa fa-user"></i></a></li>
+          <li><a href=#><i class="fa fa-shopping-bag"></i></a></li>
+        </ul>
       </div>
-      <ul class="nav-links">
-        <li class="dropdown">
-          <a href="products.html">Productos</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Yu-Gi-Oh!</a></li>
-            <li><a href="#">Magic</a></li>
-            <li><a href="#">Pokemon</a></li>
-            <li><a href="#">Lorcana</a></li>
-            <li><a href="#">Juegos de Mesa</a></li>
-            <li><a href="#">Warhammer</a></li>
-            <li><a href="#">Accesorios</a></li>
-          </ul>
-        </li>
-        <li><a href="about_us.html">Sobre Nosotros</a></li>
-      </ul>
-      <div>
-        <form class="search">
-          <input type="text" placeholder="Buscar...">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-      <ul class="menu-icons">
-        <li><a href="#"><i class="fa fa-user fa-lg"></i></a></li>
-        <li><a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
-      </ul>
     </nav>
   </header>
-  <section class="background-slider">
+
+  <div class="background-slider">
     <div class="slider-container">
       <div class="slider">
         <div class="slider-slide">
@@ -61,8 +73,7 @@
         </div>
       </div>
     </div>
-
-  </section>
+  </div>
 
   <section id="featured-products">
     <div id="featured-card-game" class="category">
