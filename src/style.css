@@ -37,7 +37,6 @@ a {
   width: 60%;
   height: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  margin-right: calc(30% - 65px);
 }
 .header_search-bar .header_input {
   padding: 8px 15px;
